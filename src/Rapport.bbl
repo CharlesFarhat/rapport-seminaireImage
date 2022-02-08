@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+
+\bibitem{super}
+Nils Funk, Juan Tarrio, Sotiris Papatheodorou, Marija Popovic, Pablo
+  Alcantarilla, and Stefan Leutenegger.
+\newblock Multi-resolution 3d mapping with explicit free space representation
+  for fast and accurate mobile robot motion planning.
+\newblock {\em IEEE Robotics and Automation Letters}, PP:1--1, 02 2021.
+
+\bibitem{book1}
+Royal~Society of~London.
+\newblock Philosophical transactions.
+\newblock In {\em Royal Society of London}, number 128, 1838.
+
+\bibitem{saito2020pifuhd}
+Shunsuke Saito, Tomas Simon, Jason Saragih, and Hanbyul Joo.
+\newblock Pifuhd: Multi-level pixel-aligned implicit function for
+  high-resolution 3d human digitization.
+\newblock In {\em CVPR}, 2020.
+
+\bibitem{DSM}
+Zhi Zheng, Yimin Luo, Zhang Yanfeng, Jun Wu, and Zhiyong Peng.
+\newblock A cnn-based subpixel level dsm generation approach via single image
+  super-resolution.
+\newblock {\em Photogrammetric Engineering and Remote Sensing}, 85:765--775, 10
+  2019.
+
+\end{thebibliography}

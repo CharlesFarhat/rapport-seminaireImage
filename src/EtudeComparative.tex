@@ -18,7 +18,7 @@
 
 On peut donc représenter un nuage de point comme l'ensemble :
 
-$$ P = \{ x_{i} \in \Re^{3} \}_{i<N} $$
+\[ P = \{ x_{i} \in \Re^{3} \}_{i<N} \]
 
 Une représentation possible dans l'espace 3D :
 
@@ -32,7 +32,7 @@ Une représentation possible dans l'espace 3D :
 Dans notre cas ici $P$ est un ensemble de points qui n'ont aucuns liens logique. En effet on considère l'ensemble des points comme non ordonné.
 Mais notre vision actuelle est limité par rapport à ce qui est possible de faire avec un nuage de points. En effet rien ne nous empêche d'ajouter en plus des informations spatiale (les coordonnées) d'autres informations, tel que la couleur des points ou encore la direction de la normale associée (très utile pour le passage de nuages de points vers mesh 3D par la méthode de reconstruction de poisson que nous verrons plus tard). Dans ce cas le nuage de point obtenu est dit augmenté et on peut le représenter comme l'ensemble :
 
-$$ P_{F} = \{ (x_{i}, f_{i}) | x_{i} \in \Re^{3}, f_{i} \in \Re^{D} \}_{i<N} $$
+\[ P_{F} = \{ (x_{i}, f_{i}) | x_{i} \in \Re^{3}, f_{i} \in \Re^{D} \}_{i<N} \]
 
 Ou $D$ est la dimension des informations liées à un point.
 On utilise très souvent des nuages de points colorés (avec une information de dimension 3 : RGB) :
@@ -48,27 +48,28 @@ On utilise très souvent des nuages de points colorés (avec une information de 
 En récapitulatif :
 
 \begin{figure}[h]
-  \subfloat[Espace vide]{
-	\begin{minipage}[c][1\width]{
-	   0.3\textwidth}
-	   \centering
-	   \includegraphics[width=1\textwidth]{Capture3}
-	\end{minipage}}
- \hfill 	
-  \subfloat[Ensemble $P$]{
-	\begin{minipage}[c][1\width]{
-	   0.3\textwidth}
-	   \centering
-	   \includegraphics[width=1.1\textwidth]{Capture1}
-	\end{minipage}}
- \hfill	
-  \subfloat[Ensemble $P_{F}$]{
-	\begin{minipage}[c][1\width]{
-	   0.3\textwidth}
-	   \centering
-	   \includegraphics[width=1.2\textwidth]{capture2}
-	\end{minipage}}
-\caption{}
+    \subfloat[Espace vide]{
+        \begin{minipage}[c][1\width]{
+            0.3\textwidth}
+            \centering
+            \includegraphics[width=1\textwidth]{Capture3}
+        \end{minipage}}
+    \hfill
+    \subfloat[Ensemble $P$]{
+        \begin{minipage}[c][1\width]{
+            0.3\textwidth}
+            \centering
+            \includegraphics[width=1.1\textwidth]{Capture1}
+        \end{minipage}}
+    \hfill
+    \subfloat[Ensemble $P_{F}$]{
+        \begin{minipage}[c][1\width]{
+            0.3\textwidth}
+            \centering
+            \includegraphics[width=1.2\textwidth]{capture2}
+        \end{minipage}}
+    \caption{}
+    \label{fig:figure1}
 \end{figure}
 
 les nuages de points obtenus sont donc une représentation discrète et non ordonnée dans l'espace.
@@ -107,8 +108,8 @@ Il est maintenant question d'étudier les différentes façons dont il est possi
 Il est important de noter que l'obtention de mesh 3D est très difficile car de demande lecture continue de l'espace 3D, cela est souvent uniquement possible en espace restreint et limité en temps. De l'autre coté l'obtention de nuages de points est beaucoup plus simple et permet une reconstruction du mesh 3D. C'est souvent la méthode que l'on utilise. Beaucoup plus simple à mettre en place.
 \subsection{Acquisition des nuages de points}
 \subsubsection{Principe}
-\paragraph 
-La méthode d'acquisition directe de nuages de points la plus répendue aujourd'hui, pour ne pas dire la seule, est celle dite des scanneur laser. Dans ce cadre les LiDAR (Light Detection And Ranging) sont les capteurs les plus privilégiées. Bien que les LiDAR peuvent être basés sur différentes technologies, le principe reste identique : il s'agit d'un "Radar électromagnétique", un émetteur qui émet une pulsation électromagnétique qui se réfléchie sur un sujet pour ensuite être captée par un récepteur. La durée entre l'émission et la réception de l'impulsion permet de déterminer la distance à l'objet.
+\paragraph
+La méthode d'acquisition la plus représentative lorsque l'on parle de nuages de points et la plus répendue aujourd'hui est celle dite des scanneur laser. Dans ce cadre les LiDAR (Light Detection And Ranging) sont les capteurs les plus privilégiées. Bien que les LiDAR peuvent être fondés sur différentes technologies, le principe reste identique : il s'agit d'un "Radar électromagnétique", un émetteur qui émet une pulsation électromagnétique qui se réfléchie sur un sujet pour ensuite être captée par un récepteur. La durée entre l'émission et la réception de l'impulsion permet de déterminer la distance à l'objet.
 
 \begin{figure}[h]
     \centering
@@ -132,17 +133,22 @@ Cette méthode permet alors d'obtenir des nuages de points de très grande quali
 Nous verrons dans la suite comment ces nuages de points peuvent être traités pour permettre la génération de maillage 3D. La même méthode peut être appliquer ici pour permettre l'obtention de maillage 3D à partir des données LiDAR.
 
 \subsubsection{capteurs}
-\subsubsection{précision}
-
-
+Le LiDAR nécessite des équipements spécifiques et couteux. Cependant, leur cout de production diminue avec la democratisation de la technologie (integration de scanner LiDAR dans plusieurs flagship smartphones).
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.50\textwidth]{ousterLidars}
+    \caption{Gamme de capteur LiDAR Ouster}
+    \label{fig:ousterLidars}
+\end{figure}
+\FloatBarrier
 
 
 \subsection{Acquisition maillages 3D}
 \subsubsection{Principe}
-\paragraph En pratique l'acquisition des maillages 3D est beaucoup plus complexe que celle des nuages de points. En effet les maillages 3D comportent une information continue et précise de la géométrie 3D, une représentation exacte de la surface du modèle. Or être capable de précisément déterminer le volume et la surface de l’environnement réel demande des technologies très complexes. 
-On peut néanmoins citer certaines de ces technologies et leurs limitations. On a notamment les scanners IRM qui permettent d'obtenir une information volumétrique mais ne sont opérationnel que sur de petits volumes.
+\paragraph En pratique l'acquisition des maillages 3D est beaucoup plus complexe que celle des nuages de points. En effet les maillages 3D comportent une information continue et précise de la géométrie 3D, une représentation exacte de la surface du modèle. Or être capable de précisément déterminer le volume et la surface de l’environnement réel demande des technologies très complexes.
+On peut néanmoins citer certaines de ces technologies et leurs limitations. On a notamment les scanners IRM qui permettent d'obtenir une information volumétrique (à partir de plusieurs tranches misent bout à bout et interpolés) mais ne sont opérationnel que sur de petits volumes.
 \newline
-Mais avec l’apparition de méthodes plus modernes, qui utilisent l'intelligence artificielle on peut aujourd’hui reconstruire un modèle 3D à partir d'une simple information 2D. Nous allons nous attarder ici à l'état de l'art actuel, pifuhd développé par facebook reasearch lab \cite{saito2020pifuhd}.
+D'autre part avec l’apparition de méthodes plus modernes, qui utilisent l'intelligence artificielle on peut aujourd’hui reconstruire un modèle 3D à partir d'une simple information 2D. Nous allons nous attarder ici à l'état de l'art actuel, pifuhd développé par facebook reasearch lab \cite{saito2020pifuhd}.
 La solution proposé permet de générer un mesh 3D à partir d'une image 2D d'une personne.
 
 \begin{figure}[h]
@@ -153,7 +159,7 @@ La solution proposé permet de générer un mesh 3D à partir d'une image 2D d'u
 \end{figure}
 \FloatBarrier
 
-Le logiciel utilise une méthode d'optimisation implicite à partir d'une analyse de l'image 2D à plusieurs niveaux (Multi-Level Pixel-Aligned Implicit Function optimization).
+Le logiciel utilise une méthode d'optimisation implicite à partir d'une analyse de l'image 2D à plusieurs niveaux (Multi-Level Pixel-Aligned Implicit Function optimization). On peut se représenter cette méthode comme une méthode des templates. En effet tout est ici, comme ci nous partions d'un model 3D universel représentant une personne et on va le déformer pour qu'il corresponde aux proportions de l'image.
 
 \begin{figure}[h]
     \centering
@@ -163,17 +169,29 @@ Le logiciel utilise une méthode d'optimisation implicite à partir d'une analys
 \end{figure}
 \FloatBarrier
 
-Ces méthodes de génération de modèles 3D à partir d'une information de dimension inférieure (Type image 2D) est voué à être de plus en plus utilisé, en effet elle permet l'obtention d'un model 3D de meilleure qualité et avec une complexité moindre qu'en passant par la génération d'un nuage de point. Ce genre de méthode, bien qu'ici réduite à la simple modélisation de personnes, à été aussi étendue à d'autre domaines, comme l'imagerie médicale ou la génération de surface topographiques (DSM : Digital elevation terrains)\cite{DSM}.
+Ces méthodes de génération de modèles 3D à partir d'une information de dimension inférieure (ie. image 2D) est voué à être de plus en plus utilisé, en effet elle permet l'obtention d'un model 3D de meilleure qualité et avec une complexité moindre qu'en passant par la génération d'un nuage de point. Ce genre de méthode, bien qu'ici réduite à la simple modélisation de personnes, à été aussi étendue à d'autre domaines, comme l'imagerie médicale ou la génération de surface topographiques (DSM : Digital elevation terrains)\cite{DSM}.
 
-Finalement, nous pouvons aussi présenter les cameras à profondeur de champ (depth cameras). Elle ne permettent pas directement d'obtenir un mesh 3D, mais elle fournissent une surface pouvant être utilisé pour la reconstruction du mesh 3D. Similaire aux technologies que nous présenteront dans la partie suivante sur les méthodes hybrides.
+
+\subsection{Méthodes hybrides}
+
+\paragraph{Présentation} Pour le moment nous avons vu comment obtenir des nuages de points et des maillages 3D directement et indépendement l'un de l'autre. Mais il existe des techniques qui permettent
+
+
+
+
+La photogrammétrie  consiste a utiliser des collections de prises de vue 2D d'un sujet pour en recréer une représentation tridimensionnelle.
+Les deux méthodes présentent des avantages et des inconvénients.
+
+
+Nous pouvons aussi présenter les cameras à profondeur de champ (depth cameras). Elle ne permettent pas directement d'obtenir un mesh 3D, mais elle fournissent une surface pouvant être utilisé pour la reconstruction du mesh 3D. Similaire aux technologies que nous présenteront dans la partie suivante sur les méthodes hybrides.
 \newline
 Elles sont constitué de deux cameras qui permettent d'obtenir une vision stéréo, on peut alors extraire une information de profondeur qui peut être utilisé par la suite pour générer un mesh 3D de la surface situé en face de la caméra (Stéréoscopie) \cite{book1}.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{stereo}
+    \includegraphics[width=0.4\textwidth]{stt}
     \caption{Fonctionnement de la Stéréoscopie}
-    \label{fig:pifuhdWork}
+    \label{fig:pifuhdWork2}
 \end{figure}
 \FloatBarrier
 
@@ -183,7 +201,7 @@ On obtient alors une carte de la profondeur vu par la caméra (depth map) :
     \centering
     \includegraphics[width=0.8\textwidth]{depthmap}
     \caption{image obtenue, noir = loin, blanc = près}
-    \label{fig:pifuhdWork}
+    \label{fig:pifuhdWork3}
 \end{figure}
 \FloatBarrier
 
@@ -198,31 +216,12 @@ On récupère alors l'environnement sous forme de mesh 3D :
 \end{figure}
 \FloatBarrier
 
-\subsubsection{capteurs}
-\subsubsection{précision}
-
-
-
-\subsection{Méthodes hybrides}
-
-La photogrammétrie  consiste a utiliser des collections de prises de vue 2D d'un sujet pour en recréer une représentation tridimensionnelle.
-Les deux méthodes présentent des avantages et des inconvénients.
-
-
-
-
-
-
-\subsubsection{capteurs}
-\paragraph Le LiDAR nécessite des équipements spécifiques et couteux. Cependant, leur cout de production diminue avec la democratisation de la technologie (integration de scanner LiDAR dans plusieurs flagship smartphones). En revanche la photogrammétrie peut utiliser n'importe quel appareil de capture d'image. Cependant, les deux technologies necessitent d'avoir de multiples prises de vue.  dans certains cas
-
-\subsubsection{précision}
-\paragraph Le LiDAR permet une très grande précision qui peut même être amélioré avec l'utilisation et la modulation des longueurs d'ondes. Cependant, cette précision est étroitement liée a la nature de l'objet. En effet, les objets foncés réflechissant moins les ondes electromagnetiques, les niveaux de bruits sont plus elevés. De la meme maniere, en fonction de le longueur d'onde, les sujets transparents ou à effet miroirs rendent donc la modélisation pratiquement impossible.
-Dans le cas de la photogrammétrie, la précision est encore plus susceptible de varier. En effet en fonction du type d'utilistaion (de la photographie aérienne aux sujets d'échelle humaine) la résolution varie. En effet, comme cette méthode repose sur l'analyse de photographies, l'algorithme de traitement ainsi que la qualité des photos influencent grandement le résulat final. De plus, on retrouve les mêmes problèmes qu'avec le LiDAR i.e. avec les faibles contrastes et objets transparents.
 
 \subsection{Conclusion}
 
-
+\subsubsection{précision}
+\paragraph Le LiDAR permet une très grande précision qui peut même être amélioré avec l'utilisation et la modulation des longueurs d'ondes. Cependant, cette précision est étroitement liée a la nature de l'objet. En effet, les objets foncés réfléchissant moins les ondes électromagnetic, les niveaux de bruits sont plus elevés. De la meme maniere, en fonction de la longueur d'onde, les sujets transparents ou à effet miroirs rendent donc la modélisation pratiquement impossible.
+Dans le cas de la photogrammétrie, la précision est encore plus susceptible de varier. En effet, en fonction du type d'utilisation (de la photographie aérienne aux sujets d'échelle humaine) la résolution varie. En effet, comme cette méthode repose sur l'analyse de photographies, l'algorithme de traitement ainsi que la qualité des photos influencent grandement le résulta final. De plus, on retrouve les mêmes problèmes qu'avec le LiDAR c'est-à-dire avec les faibles contrastes et objets transparents.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% METHODES DE STOCKAGE
@@ -232,8 +231,8 @@ Dans le cas de la photogrammétrie, la précision est encore plus susceptible de
 %% DOMAINES D'APPLICATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Domaines d'applications et utilisation}
-\paragraph Les mesh permettent donc un rendu surfacique sur laquelle s'applique une texture alors que les nuages de points est une liste de points finie et non ordonnée. 
-En pratique, les nuages de points sont utilisés principalement dans la reconnaissance 3D d'objets, par exemple dans le cadre des systèmes embarqués ou de la robotique. Bien que les nuages de points peuvent être utilisés, on utilise généralement les maillages de points pour créer des modèles CAO 3D de pièces mécanique, pour les modèles météorologiques ou dans le contrôle de qualité. Les mesh sont particulièrement utilisés de par leur caractères surfaciques pour les applications de visualisation, d'animation, de rendu et de personnalisation de masse. 
+\paragraph Les mesh permettent donc un rendu surfacique sur laquelle s'applique une texture alors que les nuages de points est une liste de points finie et non ordonnée.
+En pratique, les nuages de points sont utilisés principalement dans la reconnaissance 3D d'objets, par exemple dans le cadre des systèmes embarqués ou de la robotique. Bien que les nuages de points peuvent être utilisés, on utilise généralement les maillages de points pour créer des modèles CAO 3D de pièces mécanique, pour les modèles météorologiques ou dans le contrôle de qualité. Les mesh sont particulièrement utilisés grâce à leurs caractères surfaciques pour les applications de visualisation, d'animation, de rendu et de personnalisation de masse.
 
 \section{conclusion}
-\paragraph Ne pas oublie de parler du cout  de chaque méthode
+\paragraph Ne pas oublie de parler du cout de chaque méthode
