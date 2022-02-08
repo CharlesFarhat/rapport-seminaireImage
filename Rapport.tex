@@ -1,0 +1,55 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HEADERs
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{report}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage[section]{placeins} 
+\graphicspath{ {./images/} }
+
+\usepackage{color}   %May be necessary if you want to color links
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PARAMS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=red,  %choose some color if you want links to stand out
+}
+\author{Clara STAVUN, Anatole MARER, Charles FARHAT, Haga RANDRIANALY}
+\title{Maillage vs nuage de points: analyse comparative}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+
+%% Chapters %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Chaque chapitres sont dans un fichier
+
+\input{EtudeComparative}
+
+\chapter{Utilisation des deux Représentation dans le cadre de la modélisation des smarts cities}
+
+\section{Acquisition en nuage de point}
+
+\section{Passage de nuage de point à mesh}
+
+\section{Enrichissement et utilisation des cartes 3D obtenues}
+
+
+\bibliographystyle{plain} % We choose the "plain" reference style
+\bibliography{biblio} % Entries are in the refs.bib file
+
+\end{document}
