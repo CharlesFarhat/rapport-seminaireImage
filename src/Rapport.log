@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.8)  8 FEB 2022 18:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.8)  8 FEB 2022 19:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -308,7 +308,11 @@ tex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count292
 \l__pdf_internal_box=\box54
-) (Rapport.aux)
+) (Rapport.aux
+
+LaTeX Warning: Label `fig:photog' multiply defined.
+
+)
 \openout1 = `Rapport.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
@@ -406,17 +410,17 @@ Package pdftex.def Info: ./../images//headerimg.png  used on input line 27.
 [2
 
  <./../images//headerimg.png>]
-<./../images//ColoredPC.png, id=122, 803.0pt x 451.6875pt>
+<./../images//ColoredPC.png, id=123, 803.0pt x 451.6875pt>
 File: ./../images//ColoredPC.png Graphic file (type png)
 <use ./../images//ColoredPC.png>
 Package pdftex.def Info: ./../images//ColoredPC.png  used on input line 42.
 (pdftex.def)             Requested size: 234.8775pt x 132.11633pt.
-<./../images//Capture3.png, id=123, 151.56625pt x 177.16188pt>
+<./../images//Capture3.png, id=124, 151.56625pt x 177.16188pt>
 File: ./../images//Capture3.png Graphic file (type png)
 <use ./../images//Capture3.png>
 Package pdftex.def Info: ./../images//Capture3.png  used on input line 56.
 (pdftex.def)             Requested size: 140.92793pt x 164.7291pt.
-<./../images//Capture1.png, id=124, 192.72pt x 195.73125pt>
+<./../images//Capture1.png, id=125, 192.72pt x 195.73125pt>
 File: ./../images//Capture1.png Graphic file (type png)
 <use ./../images//Capture1.png>
 Package pdftex.def Info: ./../images//Capture1.png  used on input line 63.
@@ -426,7 +430,7 @@ Overfull \hbox (14.09364pt too wide) in paragraph at lines 63--63
  [][] 
  []
 
-<./../images//capture2.png, id=125, 203.76125pt x 194.22563pt>
+<./../images//capture2.png, id=126, 203.76125pt x 194.22563pt>
 File: ./../images//capture2.png Graphic file (type png)
 <use ./../images//capture2.png>
 Package pdftex.def Info: ./../images//capture2.png  used on input line 70.
@@ -438,106 +442,140 @@ Overfull \hbox (28.18515pt too wide) in paragraph at lines 70--70
 
 [3 <./../images//ColoredPC.png> <./../images//Capture3.png> <./../images//Captu
 re1.png> <./../images//capture2.png>]
-<./../images//Structure-of-a-3D-triangle-mesh.png, id=144, 853.1875pt x 331.237
+<./../images//Structure-of-a-3D-triangle-mesh.png, id=145, 853.1875pt x 331.237
 5pt>
 File: ./../images//Structure-of-a-3D-triangle-mesh.png Graphic file (type png)
 <use ./../images//Structure-of-a-3D-triangle-mesh.png>
 Package pdftex.def Info: ./../images//Structure-of-a-3D-triangle-mesh.png  used
  on input line 87.
 (pdftex.def)             Requested size: 234.8775pt x 91.18915pt.
-<./../images//lidarWorks.png, id=145, 770.88pt x 251.94125pt>
+<./../images//lidarWorks.png, id=146, 770.88pt x 251.94125pt>
 File: ./../images//lidarWorks.png Graphic file (type png)
 <use ./../images//lidarWorks.png>
-Package pdftex.def Info: ./../images//lidarWorks.png  used on input line 116.
+Package pdftex.def Info: ./../images//lidarWorks.png  used on input line 115.
 (pdftex.def)             Requested size: 234.8775pt x 76.76315pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4 <./../images//Structure-of-a-3D-triangle-mesh.png>]
-<./../images//FrontViewLIdar.jpg, id=155, 1119.01935pt x 550.18451pt>
+<./../images//FrontViewLIdar.jpg, id=156, 1119.01935pt x 550.18451pt>
 File: ./../images//FrontViewLIdar.jpg Graphic file (type jpg)
 <use ./../images//FrontViewLIdar.jpg>
 Package pdftex.def Info: ./../images//FrontViewLIdar.jpg  used on input line 12
-5.
+4.
 (pdftex.def)             Requested size: 170.71652pt x 83.9345pt.
-<./../images//lidarExamplePC.png, id=156, 702.625pt x 395.4775pt>
+<./../images//lidarExamplePC.png, id=157, 702.625pt x 395.4775pt>
 File: ./../images//lidarExamplePC.png Graphic file (type png)
 <use ./../images//lidarExamplePC.png>
 Package pdftex.def Info: ./../images//lidarExamplePC.png  used on input line 12
-7.
+6.
 (pdftex.def)             Requested size: 142.26378pt x 80.07169pt.
-<./../images//ousterLidars.jpg, id=157, 316.18124pt x 160.6pt>
+<./../images//ousterLidars.jpg, id=158, 316.18124pt x 160.6pt>
 File: ./../images//ousterLidars.jpg Graphic file (type jpg)
 <use ./../images//ousterLidars.jpg>
-Package pdftex.def Info: ./../images//ousterLidars.jpg  used on input line 139.
+Package pdftex.def Info: ./../images//ousterLidars.jpg  used on input line 138.
 
 (pdftex.def)             Requested size: 234.8775pt x 119.30528pt.
  [5 <./../images//lidarWorks.png (PNG copy)> <./../images//FrontViewLIdar.jpg> 
 <./../images//lidarExamplePC.png> <./../images//ousterLidars.jpg>]
-<./../images//pifuhd.png, id=171, 1235.61626pt x 770.88pt>
+<./../images//pifuhd.png, id=172, 1235.61626pt x 770.88pt>
 File: ./../images//pifuhd.png Graphic file (type png)
 <use ./../images//pifuhd.png>
-Package pdftex.def Info: ./../images//pifuhd.png  used on input line 156.
+Package pdftex.def Info: ./../images//pifuhd.png  used on input line 155.
 (pdftex.def)             Requested size: 234.8775pt x 146.52753pt.
-<./../images//pifuhdWork.png, id=172, 955.06813pt x 305.64188pt>
+<./../images//pifuhdWork.png, id=173, 955.06813pt x 305.64188pt>
 File: ./../images//pifuhdWork.png Graphic file (type png)
 <use ./../images//pifuhdWork.png>
-Package pdftex.def Info: ./../images//pifuhdWork.png  used on input line 166.
+Package pdftex.def Info: ./../images//pifuhdWork.png  used on input line 165.
 (pdftex.def)             Requested size: 375.80544pt x 120.26317pt.
  [6 <./../images//pifuhd.png (PNG copy)> <./../images//pifuhdWork.png>]
-<./../images//stt.png, id=185, 442.15187pt x 392.96812pt>
+<./../images//sfm.png, id=187, 190.21063pt x 103.38625pt>
+File: ./../images//sfm.png Graphic file (type png)
+<use ./../images//sfm.png>
+Package pdftex.def Info: ./../images//sfm.png  used on input line 182.
+(pdftex.def)             Requested size: 234.8775pt x 127.66756pt.
+<./../images//photog.jpeg, id=188, 331.4565pt x 336.384pt>
+File: ./../images//photog.jpeg Graphic file (type jpg)
+<use ./../images//photog.jpeg>
+Package pdftex.def Info: ./../images//photog.jpeg  used on input line 192.
+(pdftex.def)             Requested size: 140.92793pt x 143.02032pt.
+<./../images//reconstruction.png, id=191, 1003.75pt x 1555.8125pt>
+File: ./../images//reconstruction.png Graphic file (type png)
+<use ./../images//reconstruction.png>
+Package pdftex.def Info: ./../images//reconstruction.png  used on input line 20
+3.
+(pdftex.def)             Requested size: 187.89914pt x 291.23933pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7 <./../images//sfm.png> <./../images//photog.jpeg>]
+<./../images//stt.png, id=206, 442.15187pt x 392.96812pt>
 File: ./../images//stt.png Graphic file (type png)
 <use ./../images//stt.png>
-Package pdftex.def Info: ./../images//stt.png  used on input line 192.
+Package pdftex.def Info: ./../images//stt.png  used on input line 215.
 (pdftex.def)             Requested size: 187.89914pt x 167.00024pt.
-<./../images//depthmap.png, id=186, 1027.84pt x 513.92pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8 <./../images//reconstruction.png>]
+<./../images//depthmap.png, id=215, 1027.84pt x 513.92pt>
 File: ./../images//depthmap.png Graphic file (type png)
 <use ./../images//depthmap.png>
-Package pdftex.def Info: ./../images//depthmap.png  used on input line 202.
+Package pdftex.def Info: ./../images//depthmap.png  used on input line 225.
 (pdftex.def)             Requested size: 375.80544pt x 187.90466pt.
- [7 <./../images//stt.png> <./../images//depthmap.png (PNG copy)>]
-<./../images//super.png, id=197, 679.53876pt x 302.63063pt>
+<./../images//super.png, id=217, 679.53876pt x 302.63063pt>
 File: ./../images//super.png Graphic file (type png)
 <use ./../images//super.png>
-Package pdftex.def Info: ./../images//super.png  used on input line 213.
+Package pdftex.def Info: ./../images//super.png  used on input line 236.
 (pdftex.def)             Requested size: 375.80544pt x 167.36166pt.
-) [8 <./../images//super.png>]
-Chapter 2.
-(Rapport.bbl [9
 
-]) [10
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9 <./../images//stt.png> <./../images//depthmap.png (PNG copy)>]) [10 <./../im
+ages//super.png>]
+Chapter 2.
+(Rapport.bbl [11
+
+]) [12
 
 ] (Rapport.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `Rapport.out' has not changed.
 (rerunfilecheck)             Checksum: 5F7FD74F2BE66DC40C5C65CF2E0A732D;3246.
  ) 
 Here is how much of TeX's memory you used:
- 10694 strings out of 478584
- 176961 string characters out of 2844402
- 461049 words of memory out of 3000000
- 28683 multiletter control sequences out of 15000+600000
- 476200 words of font info for 52 fonts, out of 8000000 for 9000
+ 10755 strings out of 478584
+ 178092 string characters out of 2844402
+ 461355 words of memory out of 3000000
+ 28730 multiletter control sequences out of 15000+600000
+ 476540 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,11n,79p,713b,417s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/Users/charl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb><C:/Users/charl/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><C:/Users/charl/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb><C:/Users/charl/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/charl/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/charl/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/charl/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/charl/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/
-charl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C
-:/Users/charl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7
-.pfb><C:/Users/charl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmr8.pfb><C:/Users/charl/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb><C:/Users/charl/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmti10.pfb>
-Output written on Rapport.pdf (11 pages, 5566716 bytes).
+ 69i,11n,79p,765b,417s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\charl\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx
+1000.pk><C:/Users/charl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Users/charl/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb><C:/Users/charl/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb><C:/Users/charl/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/charl/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/charl/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/charl/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ch
+arl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/
+Users/charl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.
+pfb><C:/Users/charl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmr7.pfb><C:/Users/charl/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr8.pfb><C:/Users/charl/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb><C:/Users/charl/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Rapport.pdf (13 pages, 6206244 bytes).
 PDF statistics:
- 289 PDF objects out of 1000 (max. 8388607)
- 65 named destinations out of 1000 (max. 500000)
- 196 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 324 PDF objects out of 1000 (max. 8388607)
+ 76 named destinations out of 1000 (max. 500000)
+ 211 words of extra memory for PDF output out of 10000 (max. 10000000)
 
