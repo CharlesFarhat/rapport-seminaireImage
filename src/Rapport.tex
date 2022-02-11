@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{subfig}
 \usepackage{float}
+\usepackage{wrapfig}
 \usepackage[section]{placeins} 
 \graphicspath{ {./../images/} }
 
@@ -19,9 +20,9 @@
 \hypersetup{
     colorlinks=true, %set true if you want colored links
     linktoc=all,     %set to all if you want both sections and subsections linked
-    linkcolor=red,  %choose some color if you want links to stand out
+    linkcolor=black,  %choose some color if you want links to stand out
 }
-\author{Clara STAVUN, Anatole MARER, Charles FARHAT, Haga RANDRIANALY}
+\author{Clara STAVUN, Anatole MAURER, Charles FARHAT, Haga RANDRIANALY}
 \title{Maillage vs nuage de points: analyse comparative}
 
 
@@ -38,15 +39,9 @@
 %% Chapters %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Chaque chapitres sont dans un fichier
 
-\input{EtudeComparative.tex}
+\input{EtudeComparative}
 
-\chapter{Utilisation des deux Représentation dans le cadre de la modélisation des smarts cities}
-
-\section{Acquisition en nuage de point}
-
-\section{Passage de nuage de point à mesh}
-
-\section{Enrichissement et utilisation des cartes 3D obtenues}
+\input{Approfondissement}
 
 
 \bibliographystyle{plain} % We choose the "plain" reference style
